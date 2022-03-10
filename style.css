@@ -613,10 +613,16 @@ a:-webkit-any-link {
 .site__footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .site__footer__colonne {
   display: flex;
+  justify-content: center;
+  width: 100vw;
+  gap: 2rem;
+  padding-top: 1rem;
 }
 
 .site__footer__colonne section {
