@@ -1,5 +1,4 @@
 <footer class="site__footer">
-<footer class="site__footer">
     <!-- Première rangée de colonne -->
     <div class="site__footer__colonne">
         <section class="footer__article">

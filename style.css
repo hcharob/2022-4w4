@@ -511,7 +511,6 @@ COMPOSANTES
   font-size: 3em;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
-  color: #A69D8D;
   font-weight: bold;
   text-shadow: -4px 4px #222426, 4px -4px #CF59D3;
 }
@@ -520,9 +519,8 @@ COMPOSANTES
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: #F2F2F2;
+  color: #222426;
   text-align: center;
-  text-shadow: -3px 3px #222426, 3px -3px #CF59D3;
   padding-left: 2rem;
 }
 
@@ -587,7 +585,6 @@ COMPOSANTES
 .menu-item a {
   display: block;
   padding: 4px;
-  background-color: #CF59D3;
   color: #222426;
   transition: transform 0.3s;
   text-decoration: none;
@@ -645,13 +642,21 @@ a:-webkit-any-link {
   background-color: #3674ED;
 }
 
-.site__footer__colonne section:nth-of-type(2) li {
+.site__footer__colonne section:nth-of-type(2) a {
   color: #F2F2F2;
+}
+
+.site__footer__colonne section:nth-of-type(2) li {
   padding: 5px;
 }
 
 .site__footer__colonne section:nth-of-type(3) {
   background-color: #CF59D3;
+  color: #F2F2F2;
+}
+
+.site__footer__colonne section:nth-of-type(3) h3 {
+  color: #222426;
 }
 
 .site__footer__ligne {
