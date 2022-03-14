@@ -44,16 +44,17 @@
         display : block;
         padding : 4px;
         background-color: $color__background-link;
+        color: #222426;
         transition: transform 0.3s;
-        
         &:hover {
             background-color: $color__background-link-hover;
+            color: #222426;
         }
         text-decoration: none;
     }    
 
     a:hover {  
-        transform: translate(5px, 0);
+        transform: translate(7px, 0);
     }
 }
 
