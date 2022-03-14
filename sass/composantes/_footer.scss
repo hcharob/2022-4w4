@@ -17,19 +17,16 @@
       flex: 0 0 30%;
       width: 100%;
       background-color: #F2F2F2;
+      padding-left: 1rem;
       box-shadow: -4px 4px #3674ED, 4px -4px #CF59D3;
     }
 
     section:nth-of-type(2) {
+      
       a {
         color: $color__link__footer-font;
       }
       
-       &:hover {
-          color: #CF59D3;
-      }
-      
-
       li {
         padding: 5px;
       }

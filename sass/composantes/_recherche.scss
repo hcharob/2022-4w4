@@ -10,6 +10,12 @@
         background-color: transparent;
         width: 90%;
         border: none;
+        transition: background-color 0.25s;
+    }
+
+    &__input:focus {
+        background-color: #222426;
+        color: #F2F2F2;
     }
 
     &__bouton {
@@ -26,7 +32,7 @@
         cursor: pointer;
 
         svg {
-            color: black;
+            color: #222426;
         }
     }
 }

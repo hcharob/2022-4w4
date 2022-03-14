@@ -430,7 +430,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #ebcac1;
+  color: #F2F2F2;
   margin: 10px 0px;
   font-family: "Montserrat", sans-serif;
 }
@@ -469,7 +469,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #ebcac1;
+  color: #F2F2F2;
   margin: 5px 0px;
 }
 
@@ -490,11 +490,13 @@ COMPOSANTES
   align-items: center;
   justify-content: space-between;
   background-color: #3674ED;
-  color: #fa9292;
+  color: #222426;
 }
 
 .site__header__titre {
   display: flex;
+  align-items: center;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -532,8 +534,13 @@ COMPOSANTES
 .util {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
   padding-right: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .util {
+    margin-left: auto;
+  }
 }
 
 .util .util__lien {
@@ -546,16 +553,14 @@ COMPOSANTES
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
-  top: 1rem;
-  left: 0.5rem;
   background-color: #F2F2F2;
-  border-radius: 3px;
   padding: 2px;
   width: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 
 #chk-burger {
@@ -639,15 +644,12 @@ a:-webkit-any-link {
   flex: 0 0 30%;
   width: 100%;
   background-color: #F2F2F2;
+  padding-left: 1rem;
   box-shadow: -4px 4px #3674ED, 4px -4px #CF59D3;
 }
 
 .site__footer__colonne section:nth-of-type(2) a {
   color: #3674ED;
-}
-
-.site__footer__colonne section:nth-of-type(2):hover {
-  color: #CF59D3;
 }
 
 .site__footer__colonne section:nth-of-type(2) li {
@@ -694,6 +696,12 @@ a:-webkit-any-link {
   background-color: transparent;
   width: 90%;
   border: none;
+  transition: background-color 0.25s;
+}
+
+.recherche__input:focus {
+  background-color: #222426;
+  color: #F2F2F2;
 }
 
 .recherche__bouton {
@@ -711,7 +719,7 @@ a:-webkit-any-link {
 }
 
 .recherche__bouton svg {
-  color: black;
+  color: #222426;
 }
 
 header .recherche {
