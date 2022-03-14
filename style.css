@@ -421,7 +421,6 @@ COMPOSANTES
   text-transform: uppercase;
   color: #F2F2F2;
   text-align: center;
-  text-shadow: -2px 2px #3674ED, 2px -2px #CF59D3;
 }
 
 .formation {
@@ -589,11 +588,16 @@ COMPOSANTES
   display: block;
   padding: 4px;
   background-color: #CF59D3;
+  transition: transform 0.3s;
   text-decoration: none;
 }
 
 .menu-item a:hover {
   background-color: #F2F2F2;
+}
+
+.menu-item a:hover {
+  transform: translate(5px, 0);
 }
 
 @media screen and (min-width: 800px) {
@@ -740,9 +744,6 @@ ANIMATION
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
-/*
-theme name: Lab 2 Lemieux Florence
-*/
 .site {
   background-color: #222426;
   font-family: "Montserrat", sans-serif;

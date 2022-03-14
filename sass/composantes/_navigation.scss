@@ -44,14 +44,17 @@
         display : block;
         padding : 4px;
         background-color: $color__background-link;
+        transition: transform 0.3s;
         
         &:hover {
             background-color: $color__background-link-hover;
         }
         text-decoration: none;
-    }
+    }    
 
-    
+    a:hover {  
+        transform: translate(5px, 0);
+    }
 }
 
 @media screen and (min-width : $largeur__media--tablette){
