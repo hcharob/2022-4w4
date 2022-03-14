@@ -7,7 +7,7 @@ function cidw_4w4_enqueue(){
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
 
-/* -------------------------------------------------- Enregistré le menu */
+/* -------------------------------------------------- Enregistrer le menu */
 function cidw_4w4_register_nav_menu(){
     register_nav_menus( array(
         'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
@@ -17,7 +17,7 @@ function cidw_4w4_register_nav_menu(){
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
 
-/* ---------------------------------------------------------------------- filtré les choix du menu principal */
+/* ---------------------------------------------------------------------- filtrer les choix du menu principal */
 function cidw_4w4_filtre_choix_menu($obj_menu){
     //var_dump($obj_menu);
     foreach($obj_menu as $cle => $value)
@@ -35,7 +35,7 @@ function cidw_4w4_add_theme_support() {
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'custom-logo', array(
         'height'               => 100,
-        'width'                => 150,
+        'width'                => 100,
     ) );
 }
 

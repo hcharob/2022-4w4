@@ -493,6 +493,11 @@ COMPOSANTES
   color: #fa9292;
 }
 
+.site__header__titre {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (min-width: 800px) {
   .site__header {
     flex-direction: row;
@@ -508,7 +513,7 @@ COMPOSANTES
 }
 
 .site__header .header__titre {
-  font-size: 3em;
+  font-size: clamp(2rem, 2vw, 4rem);
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
@@ -516,7 +521,7 @@ COMPOSANTES
 }
 
 .site__header .header__description {
-  font-size: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #222426;
@@ -631,19 +636,18 @@ a:-webkit-any-link {
 .site__footer__colonne section {
   display: flex;
   flex-direction: column;
-  border: 2px solid #222426;
   flex: 0 0 30%;
   width: 100%;
   background-color: #F2F2F2;
   box-shadow: -4px 4px #3674ED, 4px -4px #CF59D3;
 }
 
-.site__footer__colonne section:nth-of-type(2) {
-  background-color: #3674ED;
+.site__footer__colonne section:nth-of-type(2) a {
+  color: #3674ED;
 }
 
-.site__footer__colonne section:nth-of-type(2) a {
-  color: #F2F2F2;
+.site__footer__colonne section:nth-of-type(2):hover {
+  color: #CF59D3;
 }
 
 .site__footer__colonne section:nth-of-type(2) li {
@@ -651,8 +655,7 @@ a:-webkit-any-link {
 }
 
 .site__footer__colonne section:nth-of-type(3) {
-  background-color: #CF59D3;
-  color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 .site__footer__colonne section:nth-of-type(3) h3 {
@@ -665,12 +668,8 @@ a:-webkit-any-link {
   align-items: center;
 }
 
-.menu-liens_externes-container {
-  background-color: white;
-}
-
 #menu-liens_externes {
-  background-color: white;
+  background-color: #F2F2F2;
 }
 
 .erreur-404 h1 {

@@ -7,6 +7,12 @@
   background-color: $color__background-header;
   color: $color__font-header;
 
+  &__titre {
+    display: flex;
+    align-items: center;
+  }
+
+
   @media screen and (min-width : $largeur__media--tablette) {
     flex-direction: row;
     padding-left: 1rem;
@@ -16,9 +22,9 @@
     flex-direction: row;
     padding-left: 1rem;
   }
-  
+
   @mixin titre {
-    font-size: 3em;
+    font-size: clamp(2rem, 2vw, 4rem);
     font-family: $font__titre;
     letter-spacing: 5px;
     font-weight: bold;
@@ -30,7 +36,7 @@
   }
 
   .header__description {
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     font-family: $font__main;
     text-transform: uppercase;
     color: #222426;
