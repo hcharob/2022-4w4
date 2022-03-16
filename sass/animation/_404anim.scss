@@ -5,12 +5,12 @@
 
     50% {
         transform: translate(0, -200px) rotate(0deg);
-        background-color: #F2F2F2;
+        background-color: $color__anim5;
     }
 
     100% {
         transform: translate(0, 0) rotate(360deg);
-        background-color: #222426;
+        background-color: $color__anim1;
     }
 }
 
@@ -42,7 +42,7 @@
 #boite2 {
     width: 400px;
     height: 400px;
-    background-color: #3D8BF2;
+    background-color: $color__anim2;
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -53,6 +53,6 @@
 .carres {
     width: 40px;
     height: 40px;
-    background-color: #222426;
+    background-color: $color__anim1;
     animation: animCarres 2.5s ease-in-out infinite;
 }

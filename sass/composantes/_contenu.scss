@@ -1,13 +1,13 @@
 .principal {
-    border: 2px solid #3674ED;
+    border: 2px solid $color__background-main;
     display: flex;
     flex-direction: column;
     align-items: center;
   
     h2 {
-        font: italic bold 2rem Montserrat;
+        font: italic bold 2rem $font__titre;
         text-transform: uppercase;
-        color: #F2F2F2;
+        color: $color__font-main;
         text-align: center;
     }
 }
@@ -46,7 +46,7 @@
 
     &__cours:hover {  
         transform: translate(-5px, -5px);
-        box-shadow: 10px 10px #CF59D3;
+        box-shadow: 10px 10px $color__background-link;
     }
 
 
@@ -60,7 +60,7 @@
 
 .cours__sigle {
     font-size: 1.2rem;
-    color: #3674ED;
+    color: $color__font-sigle;
     margin: 0;
 }
 

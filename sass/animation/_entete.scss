@@ -11,10 +11,10 @@
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        color: #222426;
+        color: $color__anim1;
         font-weight: bold;
-        background-color: #3674ED;
-        box-shadow: 5px 5px #CF59D3;
+        background-color: $color__anim2;
+        box-shadow: 5px 5px $color__anim5, 10px 10px $color__anim4;
       }
 
     &__bloc {

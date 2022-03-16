@@ -21,7 +21,7 @@
 
 /** Premier cercle **/
 #ligne1 {
-    border: 15px solid #222426;
+    border: 15px solid $color__anim1;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     width: 250px;
@@ -30,7 +30,7 @@
 
 /** Deuxième cercle **/
 #ligne2 {
-    border: 15px solid #3674ED;
+    border: 15px solid $color__anim2;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     width: 200px;
@@ -40,7 +40,7 @@
 
 /** Troisième cercle **/
 #ligne3 {
-    border: 10px solid #3D8BF2;
+    border: 10px solid $color__anim3;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     width: 150px;
@@ -50,7 +50,7 @@
 
 /** Quatrième cercle **/
 #ligne4 {
-    border: 10px solid #CF59D3;
+    border: 10px solid $color__anim4;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     width: 100px;
