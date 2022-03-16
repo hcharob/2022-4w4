@@ -1,0 +1,58 @@
+@keyframes animCarres {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(0, -200px) rotate(0deg);
+        background-color: #F2F2F2;
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+        background-color: #222426;
+    }
+}
+
+/** Ajout d'un délai pour chaque carré **/
+.carres:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.carres:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+
+.carres:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+.carres:nth-of-type(4) {
+    animation-delay: 0.8s;
+}
+
+.carres:nth-of-type(5) {
+    animation-delay: 1s;
+}
+
+.carres:nth-of-type(6) {
+    animation-delay: 1.2s;
+}
+
+#boite2 {
+    width: 400px;
+    height: 400px;
+    background-color: #3D8BF2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/** Style des carrés **/
+.carres {
+    width: 40px;
+    height: 40px;
+    background-color: #222426;
+    animation: animCarres 2.5s ease-in-out infinite;
+}
