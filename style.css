@@ -444,6 +444,7 @@ COMPOSANTES
 .formation__cours {
   background-color: #F2F2F2;
   margin: 10px;
+  line-height: 1.2;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -735,6 +736,15 @@ a:-webkit-any-link {
 
 header .recherche {
   box-shadow: -3px 3px #222426, 3px -3px #CF59D3;
+}
+
+.article {
+  padding: 1rem 3rem 1rem 1rem;
+  line-height: 1.2;
+}
+
+.titreSingle {
+  font-size: 4rem;
 }
 
 /* ---------------------------------------------------------

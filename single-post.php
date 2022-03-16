@@ -1,11 +1,9 @@
 <?php get_header() ?>
 <main class="site__main">
-
     <!-- <h1>---- single-post.php ------</h1> -->
-
    <?php if (have_posts()): the_post(); ?>
    <article class="article">
-   <?php the_title() ?>
+   <h2><?php the_title() ?></h2>
    <div class="article__contenu">
      <?php
           if(has_post_thumbnail()) : 
