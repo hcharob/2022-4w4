@@ -4,7 +4,7 @@
     height: 30px;
     position: relative;
     display: flex;
-    box-shadow: -3px 3px #3674ED, 3px -3px #CF59D3;
+    box-shadow: -3px 3px $color__anim2, 3px -3px $color__anim4;
 
     &__input {
         background-color: transparent;
@@ -31,12 +31,11 @@
         background-color: transparent;
         cursor: pointer;
         svg {
-            color: #222426;
+            color: $color__link;
         }
     }
 }
 
 header .recherche {
-    box-shadow: -3px 3px #222426, 3px -3px #CF59D3;
-
+    box-shadow: -3px 3px $color__link, 3px -3px $color__background-link;
 }
