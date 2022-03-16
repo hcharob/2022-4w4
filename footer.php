@@ -25,9 +25,9 @@
         </section>
     </div>
 
-    <h2 class="footer__titre">ZE FOOTER EXTRAORDINAIRE</h2>
-    <p class="footer__presentation">Un site web fait par une élève du TIM à l'aide de Wordpress.</p>
+    <h2 class="footer__titre">3800 Rue Sherbrooke E, Montréal, QC H1X 2A2</h2>
     <h3 class="footer__author">Fait par Hervée Charbonneau-Robichaud</h3>
+    <p class="footer__presentation">© Tous droits réservés</p>
     <?php 
 
 $icone = '<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#000"><path d="M0 0h24v24H0z" fill="none"></path><path d="M8 5v14l11-7z"></path></svg>';
