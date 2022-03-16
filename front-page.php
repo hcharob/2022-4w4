@@ -11,13 +11,13 @@
 
     <!-- <h1>---- Front-page.php ------</h1> -->
     <?php if (have_posts()): the_post(); ?>
-   
+
     <?php the_content() ?>
     <?php endif ?>
 
     <section>
 
-    <div class="anim2">
+        <div class="anim2">
             <div class="ligneCercle" id="ligne1">
                 <div class="ligneCercle" id="ligne2">
                     <div class="ligneCercle" id="ligne3">
@@ -28,6 +28,6 @@
         </div>
     </section>
 
-    
+
 </main>
 <?php get_footer() ?>

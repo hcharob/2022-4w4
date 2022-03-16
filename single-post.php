@@ -15,6 +15,14 @@
      <?php endif ?>
      <?php the_content() ?>  
      </div>
+     <div class="animation3">
+            <div class="animation__cercle"></div>
+            <div class="animation__cercle"></div>
+            <div class="animation__cercle"></div>
+            <div class="animation__cercle"></div>
+            <div class="animation__cercle"></div>
+            <div class="animation__cercle"></div>
+        </div>
    </article>
    <!-- Fin de l'article contenu -->
    <?php endif ?>

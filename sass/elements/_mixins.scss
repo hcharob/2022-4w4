@@ -5,6 +5,11 @@
      font-weight: bold;
  }
 
+ .header__titre {
+    @include titre;
+    text-shadow: -4px 4px $color__font-header, 4px -4px $color__font-barre;
+  }
+
  @mixin cercle-animes {
      display: flex;
      align-items: center;
@@ -17,6 +22,51 @@
      background-color: $color__anim2;
      box-shadow: 5px 5px $color__anim5, 10px 10px $color__anim4;
  }
+
+ .animation{
+    display : flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 3vh 0 4vh 3vw;
+
+    &__bloc {
+        @include cercle-animes;
+        animation: anim_bloc 2s ease-in-out infinite;    
+    }
+
+    &__bloc:nth-of-type(2) {
+        animation-delay: 0.2s;
+    }
+
+    &__bloc:nth-of-type(3) {
+        animation-delay: 0.4s;
+    }
+
+    &__bloc:nth-of-type(4) {
+        animation-delay: 0.6s;
+    }
+
+    &__bloc:nth-of-type(5) {
+        animation-delay: 0.8s;
+    }
+
+    @keyframes anim_bloc {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        50% {
+            transform: translate(0, 20px);
+    
+        }
+    
+        100% {
+            transform: translate(0, 0);
+    
+        }
+    }
+
+}
 
  @mixin links($couleur,
      $couleur--visited,
@@ -42,3 +92,22 @@
          outline: 0;
      }
  }
+
+ a {
+	@include links(	$color__link,
+					$color__link-visited, 
+					$color__link-hover )
+}
+
+ .site__footer a{
+	@include links(	$color__link__footer,
+					$color__link__footer-visited, 
+					$color__link__footer-hover );
+}
+
+.header__titre a{
+	@include links(	$color__link__header,
+					$color__link__header-visited, 
+					$color__link__header-hover );
+}
+

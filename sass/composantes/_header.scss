@@ -25,10 +25,7 @@
     padding-left: 1rem;
   }
 
-  .header__titre {
-    @include titre;
-    text-shadow: -4px 4px $color__font-header, 4px -4px $color__font-barre;
-  }
+ 
 
   .header__description {
     font-size: clamp(1rem, 2vw, 2rem);
