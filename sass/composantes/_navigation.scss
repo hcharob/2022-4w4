@@ -42,11 +42,11 @@
     a{
         display : block;
         padding : 4px;
-        color: #222426;
+        color: $color__link;
         transition: transform 0.3s;
         &:hover {
             background-color: $color__background-link-hover;
-            color: #222426;
+            color: $color__link;
         }
         text-decoration: none;
     }    

@@ -34,14 +34,14 @@
 
   .header__titre {
     @include titre;
-    text-shadow: -4px 4px #222426, 4px -4px #CF59D3;
+    text-shadow: -4px 4px $color__font-header, 4px -4px $color__font-barre;
   }
 
   .header__description {
     font-size: clamp(1rem, 2vw, 2rem);
     font-family: $font__main;
     text-transform: uppercase;
-    color: #222426;
+    color: $color__font-header;
     text-align: center;
     padding-left: 2rem;
   }
@@ -59,6 +59,6 @@
   .util__lien {
     display: flex;
     justify-content: space-around;
-    color: #222426;
+    color: $color__font-header;
   }
 }
