@@ -1,0 +1,44 @@
+ @mixin titre {
+     font-size: clamp(2rem, 2vw, 4rem);
+     font-family: $font__titre;
+     letter-spacing: 5px;
+     font-weight: bold;
+ }
+
+ @mixin cercle-animes {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     color: $color__anim1;
+     font-weight: bold;
+     background-color: $color__anim2;
+     box-shadow: 5px 5px $color__anim5, 10px 10px $color__anim4;
+ }
+
+ @mixin links($couleur,
+     $couleur--visited,
+     $couleur--hover) {
+     color: $couleur;
+
+     &:visited {
+         color: $couleur--visited;
+     }
+
+     &:hover,
+     &:focus,
+     &:active {
+         color: $couleur--hover;
+     }
+
+     &:focus {
+         outline: thin dotted;
+     }
+
+     &:hover,
+     &:active {
+         outline: 0;
+     }
+ }

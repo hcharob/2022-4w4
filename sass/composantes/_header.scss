@@ -25,13 +25,6 @@
     padding-left: 1rem;
   }
 
-  @mixin titre {
-    font-size: clamp(2rem, 2vw, 4rem);
-    font-family: $font__titre;
-    letter-spacing: 5px;
-    font-weight: bold;
-  }
-
   .header__titre {
     @include titre;
     text-shadow: -4px 4px $color__font-header, 4px -4px $color__font-barre;
