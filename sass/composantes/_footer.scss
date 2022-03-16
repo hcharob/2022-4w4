@@ -3,6 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #F2F2F2;
+
+  h3 {
+    color: #222426;
+   }
 
   &__colonne {
     display: flex;
@@ -35,9 +40,7 @@
 
     section:nth-of-type(3) {
       background-color: #F2F2F2;
-      h3 {
-       color: #222426;
-      }
+     
     }
 
 

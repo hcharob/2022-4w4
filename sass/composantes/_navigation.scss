@@ -2,7 +2,7 @@
     position : absolute;
     transition : transform .3s;
     transform : rotate(0);
-    background-color: #F2F2F2;
+    background-color: transparent;
     padding: 2px;
     width: 30px;
     height: 30px;
@@ -19,14 +19,15 @@
 #chk-burger:checked ~ #burger {
     transform : rotate(90deg);
 }
+
 .menu-principal-container {
     display : none;
 }
+
 #chk-burger:checked ~ .menu-principal-container{
     display : block;
     margin-top: 1rem;
     margin-left: 2.5rem;
-    
 }
 
 .menu{
