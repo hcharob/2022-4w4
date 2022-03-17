@@ -1,3 +1,15 @@
+@mixin mixins404-carres {
+    width: 40px;
+    height: 40px;
+    background-color: $color__anim1;
+  }
+
+/** Style des carrés **/
+.animation__carres {
+    @include mixins404-carres;  
+    animation: animCarres 2.5s ease-in-out infinite;
+}
+
 @keyframes animCarres {
     0% {
         transform: translate(0, 0) rotate(0deg);
@@ -50,10 +62,3 @@
 }
 
 
-/** Style des carrés **/
-.animation__carres {
-    width: 40px;
-    height: 40px;
-    background-color: $color__anim1;
-    animation: animCarres 2.5s ease-in-out infinite;
-}

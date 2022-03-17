@@ -6,9 +6,29 @@
   color: $color__link__footer-font;
   padding-bottom: 2rem;
 
-  nav {
-    text-decoration: none;
+  svg {
+    color: $color__link__footer-font
   }
+
+
+  &__menu__ul {
+    list-style-type: none;
+    display : flex;
+    justify-content: center;
+
+  }
+
+  &__menu__ul ul{
+    list-style-type: none;
+    display : flex;
+    justify-content: center;
+  }
+
+  &__menu__ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
   &__colonne {
     display: flex;
@@ -16,7 +36,6 @@
     width: 100vw;
     gap: 2rem;
     padding-top: 1rem;
-
 
     section {
       display: flex;
@@ -26,7 +45,6 @@
       background-color: $color__background-main;
       padding-left: 1rem;
       color: $color__font-footer;
-
     }
 
     section:nth-of-type(2) {
