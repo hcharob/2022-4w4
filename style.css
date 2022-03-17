@@ -875,7 +875,7 @@ ANIMATION
   animation-delay: 1.50s;
 }
 
-/** Style des carrés **/
+/** Style des carrés avec le mixin **/
 .animation__carres {
   width: 40px;
   height: 40px;
@@ -932,6 +932,15 @@ ANIMATION
   align-items: flex-end;
 }
 
+/** Style des cercles avec le mixin **/
+.animation__cercle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  animation: animCercle 3s ease-in-out infinite;
+}
+
 @keyframes animCercle {
   0% {
     transform: translate(0, 0) rotate(0deg);
@@ -979,15 +988,6 @@ ANIMATION
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-}
-
-/** Style des carrés **/
-.animation__cercle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #F2F2F2;
-  animation: animCercle 3s ease-in-out infinite;
 }
 
 /* ---------------------------------------------------------

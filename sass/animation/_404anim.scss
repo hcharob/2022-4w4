@@ -1,13 +1,13 @@
-@mixin mixins404-carres {
+@mixin mixin404-carres {
     width: 40px;
     height: 40px;
     background-color: $color__anim1;
+    animation: animCarres 2.5s ease-in-out infinite;
   }
 
-/** Style des carrés **/
+/** Style des carrés avec le mixin **/
 .animation__carres {
-    @include mixins404-carres;  
-    animation: animCarres 2.5s ease-in-out infinite;
+    @include mixin404-carres;    
 }
 
 @keyframes animCarres {
