@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   color: $color__link__footer-font;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 
   svg {
     color: $color__link__footer-font
@@ -13,14 +13,14 @@
 
   &__menu__ul {
     list-style-type: none;
-    display : flex;
+    display: flex;
     justify-content: center;
 
   }
 
-  &__menu__ul ul{
+  &__menu__ul ul {
     list-style-type: none;
-    display : flex;
+    display: flex;
     justify-content: center;
   }
 
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+  }
 
   &__colonne {
     display: flex;
@@ -42,7 +42,7 @@
       flex-direction: column;
       flex: 0 0 30%;
       width: 100%;
-      background-color: $color__background-main;
+      background-color: $color__footer-background;
       padding-left: 1rem;
       color: $color__font-footer;
     }
@@ -56,11 +56,11 @@
       li {
         padding: 5px;
       }
-
     }
 
     section:nth-of-type(3) {
-      background-color: $color__background-main;
+      background-color: $color__footer-background;
+
       a {
         transition: transform 0.3s;
 
@@ -70,9 +70,7 @@
       }
     }
 
-
     .footer__article {}
-
 
     .footer__liens {}
 

@@ -8,13 +8,13 @@
         display: flex;
         align-items: center;
         justify-content: center;    
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         color: $color__anim1;
         font-weight: bold;
         background-color: $color__anim2;
-        box-shadow: 5px 5px $color__anim5, 10px 10px $color__anim4;
+        box-shadow: 5px 5px $color__anim4, 10px 10px $color__anim5;
       }
 
     &__bloc {

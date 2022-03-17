@@ -19,7 +19,33 @@
 .site__main{
     grid-area: main;
     background-color: $color__background-main;
+    position: relative;
+    z-index: 3;
+    color: $color__font-main;
 
+    p, h2, section {
+        z-index: 2;
+    }
+
+    p, h2 {
+        background-color: $color__background-main;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    svg:first-of-type{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    svg:nth-of-type(2) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+    }
 }
 
 .site__footer{
