@@ -10,12 +10,9 @@
     color: $color__link__footer-font
   }
 
-
   &__menu__ul {
-    list-style-type: none;
     display: flex;
     justify-content: center;
-
   }
 
   &__menu__ul ul {
@@ -32,10 +29,20 @@
 
   &__colonne {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100vw;
-    gap: 2rem;
-    padding-top: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    width: 85%;
+    margin-top: 1rem;
+
+
+    @media screen and (min-width : $largeur__media--tablette) {
+        flex-direction: row;
+        width: 100vw;
+        gap: 2rem;
+        padding-top: 1rem;
+    }
 
     section {
       display: flex;
@@ -80,4 +87,11 @@
   #menu-liens_externes {
     background-color: $color__link__footer-font;
   }
+
+  
+}
+
+.wp-block-social-link a {
+  background-color: $color__link__footer;
+  border-radius: 50%;
 }

@@ -24,23 +24,10 @@
     color: $color__font-main;
 
     p, h2, section {
-        z-index: 2;
-    }
-
-    p, h2 {
-        background-color: $color__background-main;
-        border-radius: 10px;
-        padding: 1rem;
+        z-index: 2;   
     }
 
     svg:first-of-type{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
-    }
-
-    svg:nth-of-type(2) {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -76,18 +63,21 @@
 
     //juste la pade d'accueil
     .home {
-        grid-template-columns: ($size__site-barre) auto;
+        display: grid;
+        //gap : 10px;
+        grid-template-columns: auto;
         grid-template-areas:
-        "header header"
-        "sidebar main"
-        "footer footer";
+            "sidebar"
+            "header"
+            "main"
+            "footer";
     }
-
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
 }
 

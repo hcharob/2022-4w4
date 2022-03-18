@@ -95,6 +95,19 @@ function my_register_sidebars() {
             'after_title'   => '</h3>',
         )
     );
+
+    register_sidebar(
+        array(
+            'id'            => 'entete_1',
+            'name'          => __( 'Entete 1' ),
+            'description'   => __( 'Ce sidebar s\'affiche dans l\'entête du site' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+
 }
 
 ?>
