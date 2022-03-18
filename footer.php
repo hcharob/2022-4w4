@@ -43,7 +43,5 @@ wp_nav_menu(array(
 </footer>
 
 <?php wp_footer(); ?>
-
 </body>
-
 </html>
