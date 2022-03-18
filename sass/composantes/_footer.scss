@@ -1,3 +1,4 @@
+ /** Style du footer **/
 .site__footer {
   display: flex;
   flex-direction: column;
@@ -36,7 +37,6 @@
     width: 85%;
     margin-top: 1rem;
 
-
     @media screen and (min-width : $largeur__media--tablette) {
         flex-direction: row;
         width: 100vw;
@@ -54,8 +54,8 @@
       color: $color__font-footer;
     }
 
+     /** Deuxième boîte avec les widgets **/
     section:nth-of-type(2) {
-
       a {
         color: $color__link__footer;
       }
@@ -65,10 +65,12 @@
       }
     }
 
+    /** Troisième boîte avec les widgets **/
     section:nth-of-type(3) {
       background-color: $color__footer-background;
-
+      
       a {
+        color: $color__font-footer;
         transition: transform 0.3s;
 
         &:hover {
@@ -87,10 +89,9 @@
   #menu-liens_externes {
     background-color: $color__link__footer-font;
   }
-
-  
 }
 
+/** Icônes du footer **/
 .wp-block-social-link a {
   background-color: $color__link__footer;
   border-radius: 50%;

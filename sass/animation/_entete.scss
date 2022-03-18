@@ -4,6 +4,7 @@
     width: 90%;
     padding: 3vh 0 4vh 3vw;
 
+    /** Style des cercles avec le mixin **/
     @mixin cercle-animes {
         display: flex;
         align-items: center;
@@ -53,5 +54,4 @@
     
         }
     }
-
 }

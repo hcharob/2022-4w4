@@ -347,6 +347,7 @@ html {
 /* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
+/** Mixin pour les liens **/
 a {
   color: #222426;
 }
@@ -396,7 +397,7 @@ a:hover, a:active {
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #F2F2F2;
+  color: #CF59D3;
 }
 
 .header__titre a:focus {
@@ -410,6 +411,7 @@ a:hover, a:active {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+/** Contenu principal **/
 .principal {
   border: 2px solid #222426;
   display: flex;
@@ -485,6 +487,7 @@ COMPOSANTES
   font-size: 1rem;
 }
 
+/** Style du header **/
 .site__header {
   width: 100vw;
   display: flex;
@@ -492,6 +495,7 @@ COMPOSANTES
   justify-content: space-between;
   background-color: #3674ED;
   color: #222426;
+  /** Mixin pour les titres **/
 }
 
 .site__header__titre {
@@ -518,7 +522,7 @@ COMPOSANTES
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
-  text-shadow: -4px 4px #222426, 4px -4px #CF59D3;
+  text-shadow: -4px 4px #222426;
 }
 
 .site__header .header__description {
@@ -530,6 +534,7 @@ COMPOSANTES
   padding-left: 2rem;
 }
 
+/** Deuxième boîte avec les widgets **/
 .util {
   display: flex;
   flex-direction: column;
@@ -553,6 +558,7 @@ COMPOSANTES
   gap: 1rem;
 }
 
+/** Style de la navigation **/
 #burger {
   transition: transform .3s;
   transform: rotate(0);
@@ -573,6 +579,7 @@ COMPOSANTES
   color: white;
 }
 
+/** Style pour le menu burger **/
 #chk-burger {
   display: none;
 }
@@ -638,6 +645,7 @@ a:-webkit-any-link {
   text-transform: uppercase;
 }
 
+/** Style du footer **/
 .site__footer {
   display: flex;
   flex-direction: column;
@@ -676,6 +684,8 @@ a:-webkit-any-link {
   gap: 1rem;
   width: 85%;
   margin-top: 1rem;
+  /** Deuxième boîte avec les widgets **/
+  /** Troisième boîte avec les widgets **/
 }
 
 @media screen and (min-width: 800px) {
@@ -710,6 +720,7 @@ a:-webkit-any-link {
 }
 
 .site__footer__colonne section:nth-of-type(3) a {
+  color: #222426;
   transition: transform 0.3s;
 }
 
@@ -727,11 +738,13 @@ a:-webkit-any-link {
   background-color: #F2F2F2;
 }
 
+/** Icônes du footer **/
 .wp-block-social-link a {
   background-color: #3674ED;
   border-radius: 50%;
 }
 
+/** Page 404 **/
 .erreur-404 h1 {
   font-size: 5rem;
   font-family: "Montserrat", sans-serif;
@@ -741,6 +754,7 @@ a:-webkit-any-link {
   display: flex;
 }
 
+/** Style de la barre de recherche **/
 .recherche {
   background-color: #F2F2F2;
   width: 300px;
@@ -801,6 +815,7 @@ ANIMATION
   justify-content: space-between;
   width: 90%;
   padding: 3vh 0 4vh 3vw;
+  /** Style des cercles avec le mixin **/
 }
 
 .animation__bloc {
@@ -845,6 +860,7 @@ ANIMATION
   }
 }
 
+/** Animation de la rotation **/
 @keyframes animRotation {
   from {
     transform: rotate(0deg);
@@ -911,6 +927,7 @@ ANIMATION
   animation: animCarres 2.5s ease-in-out infinite;
 }
 
+/** Animation des carrés **/
 @keyframes animCarres {
   0% {
     transform: translate(0, 0) rotate(0deg);
@@ -960,6 +977,7 @@ ANIMATION
   align-items: flex-end;
 }
 
+/** Style des cercles dans la page single.php avec un mixin **/
 /** Style des cercles avec le mixin **/
 .animation__cercle {
   width: 30px;
@@ -983,7 +1001,7 @@ ANIMATION
   }
 }
 
-/** Ajout d'un délai pour chaque carré **/
+/** Ajout d'un délai pour chaque cercle **/
 .animation__cercle:nth-of-type(1) {
   animation-delay: 0.2s;
 }
@@ -1021,6 +1039,7 @@ ANIMATION
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
+/** Style général et layout de la page **/
 .site {
   background-color: #222426;
   font-family: "Montserrat", sans-serif;

@@ -1,3 +1,4 @@
+/** Style du header **/
 .site__header {
   width: 100vw;
   display: flex;
@@ -24,6 +25,7 @@
     }
   }
 
+  /** Mixin pour les titres **/
   @mixin titre {
     font-size: clamp(2rem, 2vw, 4rem);
     font-family: $font__titre;
@@ -33,7 +35,7 @@
 
   .header__titre {
     @include titre;
-    text-shadow: -4px 4px $color__font-header, 4px -4px $color__font-barre;
+    text-shadow: -4px 4px $color__font-header;
   }
 
   .header__description {
@@ -46,6 +48,7 @@
   }
 }
 
+/** Deuxième boîte avec les widgets **/
 .util {
   display: flex;
   flex-direction: column;
@@ -53,7 +56,6 @@
   justify-content: center;
   width : 90%;
   
-
   @media screen and (min-width: $largeur__media--tablette) {
     margin-left: auto;
     padding-right: 2rem;

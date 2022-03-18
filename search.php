@@ -15,8 +15,6 @@
     <?php else :  ?>
         <p>Aucun résultat</p>
     <?php endif ?>
-
-
 </main>
 
 <?php get_footer() ?>

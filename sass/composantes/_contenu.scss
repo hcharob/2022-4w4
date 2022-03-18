@@ -1,3 +1,4 @@
+ /** Contenu principal **/
 .principal {
     border: 2px solid $color__background-main;
     display: flex;
@@ -42,15 +43,12 @@
             width: 30%;
         }
         padding: 10px;
-
     }
 
     &__cours:hover {  
         transform: translate(-5px, -5px);
         box-shadow: 10px 10px $color__background-link;
     }
-
-
 }
 
 .cours__titre {

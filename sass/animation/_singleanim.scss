@@ -1,3 +1,4 @@
+ /** Style des cercles dans la page single.php avec un mixin **/
 @mixin mixinsingle-cercles {
     width: 30px;
     height: 30px;
@@ -27,7 +28,7 @@
     }
 }
 
-/** Ajout d'un délai pour chaque carré **/
+/** Ajout d'un délai pour chaque cercle **/
 .animation__cercle:nth-of-type(1) {
     animation-delay: 0.2s;
 }
