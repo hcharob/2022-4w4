@@ -70,23 +70,14 @@
       }
     }
 
-    .footer__article {}
-
-    .footer__liens {}
-
-    .footer__adresse {}
-
+    &__ligne {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
-  &__ligne {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #menu-liens_externes {
+    background-color: $color__link__footer-font;
   }
-}
-
-.menu-liens_externes-container {}
-
-#menu-liens_externes {
-  background-color: $color__link__footer-font;
 }

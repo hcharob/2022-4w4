@@ -489,7 +489,6 @@ COMPOSANTES
   width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   background-color: #3674ED;
   color: #222426;
@@ -497,9 +496,15 @@ COMPOSANTES
 
 .site__header__titre {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header__titre {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -536,12 +541,14 @@ COMPOSANTES
 .util {
   display: flex;
   flex-direction: column;
-  padding-right: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 800px) {
   .util {
     margin-left: auto;
+    padding-right: 2rem;
   }
 }
 
@@ -549,20 +556,25 @@ COMPOSANTES
   display: flex;
   justify-content: space-around;
   color: #222426;
+  gap: 1rem;
 }
 
 #burger {
   position: absolute;
+  top: 8.5vh;
+  left: 3vw;
   transition: transform .3s;
   transform: rotate(0);
-  background-color: transparent;
+  border-radius: 4px;
   padding: 2px;
   width: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 5;
+  z-index: 6;
+  background-color: #F2F2F2;
+  cursor: pointer;
 }
 
 #chk-burger {
@@ -580,7 +592,7 @@ COMPOSANTES
 #chk-burger:checked ~ .menu-principal-container {
   display: block;
   margin-top: 1rem;
-  margin-left: 2.5rem;
+  margin-left: 10%;
 }
 
 .menu {
@@ -694,13 +706,13 @@ a:-webkit-any-link {
   background-color: #CF59D3;
 }
 
-.site__footer__ligne {
+.site__footer__colonne__ligne {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#menu-liens_externes {
+.site__footer #menu-liens_externes {
   background-color: #F2F2F2;
 }
 

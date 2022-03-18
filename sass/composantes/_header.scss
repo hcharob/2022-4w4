@@ -2,16 +2,19 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   background-color: $color__background-header;
   color: $color__font-header;
 
   &__titre {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    align-items: center;
+
+    @media screen and (min-width : $largeur__media--tablette) {
+      flex-direction: row;
+      gap: 1rem;
+    }
   }
 
 
@@ -50,15 +53,19 @@
 .util {
   display: flex;
   flex-direction: column;
-  padding-right: 2rem;
+  align-items: center;
+  justify-content: center;
+  
 
   @media screen and (min-width: $largeur__media--tablette) {
     margin-left: auto;
+    padding-right: 2rem;
   }
 
   .util__lien {
     display: flex;
     justify-content: space-around;
     color: $color__font-header;
+    gap: 1rem;
   }
 }
